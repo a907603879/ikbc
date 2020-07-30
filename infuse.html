@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户登录</title>
-    <link rel="stylesheet" href="./css/infuse.min.css">
-    <script src="js/require.js" async="true" defer data-main="js/main"></script>
-</head>
-<body>
-    <div>
-        <!-- header -->
-        <div class="header">
-            <div class="header_main">
-                <a href="#"><img src="./images/logo.png" alt=""></a>
-                <ul class="xn_index_ul">
-                    <li><a  href="#">typeman®</a></li>
-                    <li><a href="#">raceman®</a></li>
-                    <li><a href="#">IP系列</a></li>
-                    <li><a href="#">服务中心</a></li>
-                    <li><a href="#">关于我们</a></li>
-                </ul>
-                <div class="logn">
-                    <span class="btn_log"><a href="http://localhost:2222/infuse.html#">登录</a></span>
-                    <span>/</span>
-                    <span class="btn_res"><a href="http://localhost:2222/infuse.html#">注册</a></span>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>用户登录</title>
+        <link rel="stylesheet" href="./css/infuse.min.css">
+        <script src="js/require.js" async="true" defer data-main="js/main"></script>
+    </head>
+
+    <body>
+        <div>
+            <!-- header -->
+            <div class="header">
+                <div class="header_main">
+                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                    <ul class="xn_index_ul">
+                        <li><a href="#">typeman®</a></li>
+                        <li><a href="#">raceman®</a></li>
+                        <li><a href="#">IP系列</a></li>
+                        <li><a href="#">服务中心</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                    <div class="logn">
+                        <span class="btn_log"><a href="http://localhost:2222/infuse.html#">登录</a></span>
+                        <span>/</span>
+                        <span class="btn_res"><a href="http://localhost:2222/infuse.html#">注册</a></span>
+                    </div>
+                </div>
+                <div class="xn_list">
+                    <ul class="xn_list_mainera" style="display: none;">
+                    </ul>
+                    <ul class="xn_list_mainerb" style="display: none;">
+                    </ul>
+                    <ul class="xn_list_mainerc" style="display: none;">
+                    </ul>
                 </div>
             </div>
-            <div class="xn_list">
-                <ul class="xn_list_mainera" style="display: none;">
-                </ul>
-                <ul class="xn_list_mainerb" style="display: none;">
-                </ul>
-                <ul class="xn_list_mainerc" style="display: none;">
-                </ul>
-            </div>
-        </div>
-        <!-- banner -->
-        <div class="banner">
-            <div class="main">
-                <!-- 登录窗 -->
-                <div class="login_user" style="display: block;">
-                    <div class="login_option">
-                        <a href="#" class="option_active">帐号登录</a>
-                        <a href="#">扫码登陆</a>
-                    </div>
-                    <div class="login_msg">
-                        <input type="text" placeholder="邮箱/手机号码">
-                        <input type="text" placeholder="密码">
-                        <div class="lg_alert">
-                            
+            <!-- banner -->
+            <div class="banner">
+                <div class="main">
+                    <!-- 登录窗 -->
+                    <div class="login_user" style="display: block;">
+                        <div class="login_option">
+                            <a href="#" class="option_active">帐号登录</a>
+                            <a href="#">扫码登陆</a>
+                        </div>
+                        <div class="login_msg">
+                            <input type="text" placeholder="邮箱/手机号码">
+                            <input type="password" placeholder="密码">
+                            <div class="lg_alert">
+
+                            </div>
+                        </div>
+                        <button>登录</button>
+                        <span class="button_msg"><a href="#">手机短信登录/注册</a></span>
+                        <span class="login_id">
+                            <a href="#">立即注册</a>
+                            <a href="#">忘记密码？</a>
+                        </span>
+                        <span class="login_other"><a href="#">其他方式登录</a></span>
+                        <div>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
                         </div>
                     </div>
-                    <button>登录</button>
-                    <span class="button_msg"><a href="#" >手机短信登录/注册</a></span>
-                    <span class="login_id">
-                        <a href="#">立即注册</a>
-                        <a href="#">忘记密码？</a>
-                    </span>
-                    <span class="login_other"><a href="#">其他方式登录</a></span>
-                    <div>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                    <!-- 注册窗 -->
+                    <div class="banner_register" style="display: none;">
+                        <div class="banner_user_re">
+                            <p>账号注册</p>
+                        </div>
+                        <div class="banner_msg">
+                            <label for="username">用户名</label>
+                            <input class="username" type="text" placeholder="邮箱/手机号码">
+                            <p class="hUsername"></p>
+                            <label for="password">密码</label>
+                            <input class="password" type="password" placeholder="密码">
+                            <p class="hPassword">6～16个字符,区分大小写</p>
+                            <label for="repassword">确认密码</label>
+                            <input class="bPassword" type="password" placeholder="密码">
+                            <p class="hbPassword">请再次输入密码</p>
+                            <div class="re_alert"></div>
+                        </div>
+                        <div class="re_btn">
+                            <button>立即注册</button>
+                        </div>
+
                     </div>
                 </div>
-                <!-- 注册窗 -->
-                <div class="banner_register" style="display: none;">
-                    <div class="banner_user_re">
-                       <p>账号注册</p>
-                    </div>
-                    <div class="banner_msg">
-                        <label for="username">用户名</label>
-                        <input class="username" type="text" placeholder="邮箱/手机号码">
-                        <p class="hUsername"></p>
-                        <label for="password">密码</label>
-                        <input class="password" type="password" placeholder="密码">
-                        <p class="hPassword">6～16个字符,区分大小写</p>
-                        <label for="repassword">确认密码</label>
-                        <input class="bPassword" type="password" placeholder="密码">
-                        <p class="hbPassword">请再次输入密码</p>
-                        <div class="re_alert"></div>
-                    </div>
-                    <div class="re_btn">
-                        <button>立即注册</button>
-                    </div>
-     
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer_link">
+                    <ul class="lang_select">
+                        <li><a href="#">简体</a></li>
+                        <li><a href="#">繁体</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer_text">
+                    <p>小米公司版权所有-京ICP备10046444-</p>
+                    <p>-京ICP证110507号</p>
                 </div>
             </div>
         </div>
-        <!-- footer -->
-        <div class="footer">
-            <div class="footer_link">
-                <ul class="lang_select">
-                    <li><a href="#">简体</a></li>
-                    <li><a href="#">繁体</a></li>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">常见问题</a></li>
-                    <li><a href="#">隐私政策</a></li>
-                </ul>
-            </div>
-            <div class="footer_text">
-                <p>小米公司版权所有-京ICP备10046444-</p>
-                <p>-京ICP证110507号</p>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
+
 </html>
