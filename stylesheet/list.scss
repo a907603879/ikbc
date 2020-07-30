@@ -1,0 +1,229 @@
+@import 'rest';
+@import 'mixin';
+
+//header
+.header{
+    @include header_nav;
+    .header_main{
+        @include header_main;
+        a{
+            @include header_a
+        }
+        .xn_index_ul{
+            width: 800px;
+            height: 70px;
+            margin: 0 auto;
+            li{
+                float: left;
+                height: 70px;
+                line-height: 70px;
+                margin: auto 38px;
+                a{
+                    font-size: 14px;
+                    color: #79797B;
+                }
+                .nav_active{
+                    color: white;
+                }
+            }
+        }
+        .logn{
+            height: 100%;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                color: #F6F6F6;
+                a{
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #F6F6F6;
+                    text-align: center;
+                    width: 28px;
+                    height: 19px;
+                    line-height: 19px;
+                    margin: auto 5px;
+                }
+            }
+        }
+    }   
+    .xn_list{
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        // height: 140px;
+        ul{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            li{
+                height: 85px;
+                width: 190px;
+                margin:10px 22.5px 0 22.5px;
+                float: left;
+                a{
+                    display: inline-block;
+                    height: 85px;
+                    width: 190px;
+                    font-size: 14px;
+                    color: #79797B;
+                    text-align: center;
+                    img{                        
+                    height: 85px;
+                    width: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//banner
+.main{
+    margin-top: 70px;
+    .mainer{
+        width: 1200px;
+        margin: 0 auto;
+        @include clr;
+        .mainer_list{
+            li{
+                height: 450px;
+                width: 250px;
+                padding-bottom: 15px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                background: #F7F8F8;
+                float: left;
+                .mainer_img{
+                    height: 335px;
+                    width: 100%;
+                    a{
+                        display: block;
+                        height: 250px;
+                        width: 250px;
+                        margin-top: 30px;
+                        img{
+                            height: 250px;
+                            width: 250px;
+                        }
+                        span{
+                            font-size: 20px;
+                            color: #7A8086;
+                            font-weight: bold;
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                            width: 210px;
+                            margin:0 auto;
+                            line-height: 30px;
+                        }
+
+                    }
+                }
+                .mainer_text{
+                    span{
+                        margin: auto;
+                        margin-top: 10px;
+                        display: block;
+                        text-align: left;
+                        width: 210px;
+                        height: 150px;
+                        line-height: 25px;
+                        font-size: 16px;
+                        color: #7A8086;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.footer{
+    margin-top: 100px;
+    height: 258px;
+    background: #f5f5f7;
+
+    .footer_link{
+        width: 1200px;
+        padding: 70px 0 30px 0;
+        margin: 0 auto;
+        .footer_link_list{
+            height: 98px;
+            margin: 0 auto;
+            dl{
+                float: left;
+                width: 310px;
+                margin-right: 90px;
+                dd{
+                    float: left;
+                    height: 98px;
+                    width: 98px;
+                }
+                dd:nth-child(2){
+                    height: 45px;
+                    width: 45px;
+                    margin: 0 26px;
+                    margin-left: 61px;
+                }
+                dd:nth-child(3){
+                    height: 48px;
+                    width: 126px;
+                    margin-top:8px;
+                    margin-left: 35px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #86868B;
+                    text-align: left;
+                }
+            }
+            dl:last-child{
+                
+                margin: 0;
+                dd{
+                    line-height: 25px;
+                    font-size: 24px;
+                    color: #86868B;
+                    font-weight: bolder;
+                    clear: both;
+                    width: 100%;
+                    text-align: right;
+                }
+                dd:nth-child(1){
+                    font-weight: normal;
+                    height: 65px;
+                    line-height: 65px;
+                    background: url(../images/tel.png)no-repeat 130px center;
+                }                
+                dd:nth-child(2){
+                    height: 31px;
+                    margin: 0;
+                    span{
+                        line-height: 31px;
+                    }
+                }                
+                dd:nth-child(3){
+                    i{
+                        font-weight: bolder;
+                    }
+                }                
+                   
+            }
+        }
+        .footer_text{
+            width: 1200px;
+            height: 30px;
+            margin: 30px auto 0 auto;
+            display: flex;
+            justify-content: center;
+            color: #86868B ;
+            font-size: 14px;
+        }
+    }
+}

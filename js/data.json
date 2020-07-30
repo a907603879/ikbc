@@ -1,0 +1,169 @@
+[
+    {
+        "title": "首页列表",
+        "index": [
+            {
+                "id": 1,
+                "title": "pokerI",
+                "img": "./images/pokerI.jpg"
+            },
+            {
+                "id": 2,
+                "title": "f87",
+                "img": "./images/f87.jpg"
+            },
+            {
+                "id": 3,
+                "title": "rx782",
+                "img": "./images/rx782.jpg"
+            },
+            {
+                "id": 4,
+                "title": "c87",
+                "img": "./images/c87.png"
+            }
+        ]
+    },
+    {
+        "title": "产品列表",
+        "index": [
+            {
+                "id": 1,
+                "title": "c87",
+                "img": "./images/list_c87.jpg",
+                "text": "PBT键帽、内置加厚钢板、德国原厂Cherry轴，手感舒适。",
+                "money":"388"
+            },
+            {
+                "id": 2,
+                "title": "c104",
+                "img": "./images/c104.jpg",
+                "text": "PBT键帽、内置加厚钢板、德国原厂Cherry轴，手感舒适。",
+                "money":"488"
+            },
+            {
+                "id": 3,
+                "title": "c200",
+                "img": "./images/c200.png",
+                "text": "PBT键帽、内置加厚钢板、德国原厂Cherry轴，手感舒适。",
+                "money":"588"
+            },
+            {
+                "id": 4,
+                "title": "c87_n",
+                "img": "./images/c87_novice.jpg",
+                "text": "PBT键帽、内置加厚钢板、德国原厂Cherry轴，手感舒适。",
+                "money":"488"
+            },
+            {
+                "id": 5,
+                "title": "c104_n",
+                "img": "./images/c104.jpg",
+                "text": "PBT键帽、内置加厚钢板、德国原厂Cherry轴，手感舒适。",
+                "money":"588"
+            },
+            {
+                "id": 6,
+                "title": "c200_n",
+                "img": "./images/c200_novice.png",
+                "text": "PBT键帽、内置加厚钢板、德国原厂Cherry轴，手感舒适。",
+                "money":"688"
+            }
+        ]
+    },
+    {
+        "title": "产品详情",
+        "index": [
+            {
+                "id": 1,
+                "title": "inf1",
+                "img": "./images/inf1.jpg"
+            },
+            {
+                "id": 2,
+                "title": "inf2",
+                "img": "./images/inf2.jpg"
+            },
+            {
+                "id": 3,
+                "title": "inf3",
+                "img": "./images/inf3.jpg"
+            },
+            {
+                "id": 4,
+                "title": "inf4",
+                "img": "./images/inf4.jpg"
+            },
+            {
+                "id": 5,
+                "title": "inf5",
+                "img": "./images/inf5.jpg"
+            },
+            {
+                "id": 6,
+                "title": "inf6",
+                "img": "./images/inf6.jpg"
+            },
+            {
+                "id": 7,
+                "title": "inf7",
+                "img": "./images/inf7.jpg"
+            }
+        ]
+    },
+    {
+        "title": "typeman®",
+        "index": [
+            {
+                "id": 1,
+                "title": "typeman C系列",
+                "img": "./images/list1-1.png"
+            },
+            {
+                "id": 2,
+                "title": "typeman W系列",
+                "img": "./images/list1-2.png"
+            },
+            {
+                "id": 3,
+                "title": "typeman F系列",
+                "img": "./images/list1-3.png"
+            },
+            {
+                "id": 4,
+                "title": "Roker",
+                "img": "./images/list1-4.png"
+            }
+        ]
+    },
+    {
+        "title": "raceman®",
+        "index": [
+            {
+                "id": 1,
+                "title": "R300",
+                "img": "./images/list2-1.jpg"
+            }
+        ]
+    },
+    {
+        "title": "服务中心",
+        "index": [
+            {
+                "id": 1,
+                "title": "下载中心",
+                "img": "./images/list4-1.jpg"
+            },
+            {
+                "id": 2,
+                "title": "售后服务",
+                "img": "./images/list4-2.jpg"
+            },
+            {
+                "id": 3,
+                "title": "授权店铺",
+                "img": "./images/list4-3.jpg"
+            }
+        ]
+    }
+]

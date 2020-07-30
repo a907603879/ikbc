@@ -1,0 +1,378 @@
+@import 'rest';
+@import 'mixin';
+
+//header
+.header{
+    @include header_nav;
+    .header_main{
+        @include header_main;
+        a{
+            @include header_a
+        }
+        .xn_index_ul{
+            width: 800px;
+            height: 70px;
+            margin: 0 auto;
+            li{
+                float: left;
+                height: 70px;
+                line-height: 70px;
+                margin: auto 38px;
+                a{
+                    font-size: 14px;
+                    color: #79797B;
+                }
+                .nav_active{
+                    color: white;
+                }
+            }
+        }
+        .logn{
+            height: 100%;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                color: #F6F6F6;
+                a{
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #F6F6F6;
+                    text-align: center;
+                    width: 28px;
+                    height: 19px;
+                    line-height: 19px;
+                    margin: auto 5px;
+                }
+            }
+        }
+    }   
+    .xn_list{
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        // height: 140px;
+        ul{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            li{
+                height: 85px;
+                width: 190px;
+                margin:10px 22.5px 0 22.5px;
+                float: left;
+                a{
+                    display: inline-block;
+                    height: 85px;
+                    width: 190px;
+                    font-size: 14px;
+                    color: #79797B;
+                    text-align: center;
+                    img{                        
+                    height: 85px;
+                    width: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//banner
+.banner{
+    @include mainner;
+    width: 100%;
+    height: 588px;
+    background:url(../images/banner_background.jpg)no-repeat;
+    background-size: cover;
+    background-position: top,center;
+    .main{
+        width: 1130px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        .alert_danger{
+            color: red;
+        }
+        .alert_success{
+            color: green;
+        }
+        // 登录框
+        .login_user{
+            display: none;
+            width: 348px;
+            height: 555px;
+            background-color: skyblue;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0 31px;
+            .login_option{
+                padding: 27px 48px 24px;
+                text-align: center;
+                height: 31px;
+                a{
+                    color: #666;
+                    font-size: 24px;
+                    text-align: center;
+                    display: block;
+                    float: left;
+                }
+                a:first-child{
+                    padding-right: 29px;
+                    border-right: 1px solid #e0e0e0;
+                }
+                a:last-child{
+                    margin-left: 29px;
+                }
+                .option_active{
+                    color: #4a4a4a;
+                }
+            }
+            .login_msg{
+                text-align: center;
+                input{ 
+                    width:316px;
+                    height: 22px;
+                    padding: 13px 16px 14px ;
+                    border: none;
+                    color: #4a4a4a;
+                    display: block;
+                    margin-bottom: 14px;
+                    background: #999;
+                }
+                .alert{
+                    font-size: 12px;
+                    display: none;
+                }
+                .alert-danger{
+                    color: red;
+                }
+                .alert-sucess{
+                    color: green;
+                }
+            }
+            button{
+                height: 50px;
+                width: 100%;
+                margin-top:10px;
+                margin-bottom: 14px;
+                background: #4a4a4a;
+                border: none;
+                line-height: 50px;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                cursor: pointer;
+            }
+            .button_msg{
+                a{
+                color: #4a4a4a;
+                font-size: 14px;
+                text-align: center;
+                display: block;
+                margin-bottom: 30px;
+                }
+            }
+            .login_id{
+                display: block;
+                padding: 0 98px;
+                margin-bottom: 113px;
+                a{
+                    color: #999;
+                    font-size: 14px;
+                }
+                a:first-child{
+                    padding-right: 8px;
+                    border-right: 1px solid #999;
+                }
+                a:last-child{
+                    margin-left: 8px;
+                }
+            }
+            .login_other{
+                a{
+                color: black;
+                font-size: 14px;
+                display: block;
+                width: 84px;
+                height: 19px;
+                margin: 0 auto;
+                }
+            }
+            // 登录框
+            .banner_msg{
+                text-align: center;
+                input{ 
+                    width:316px;
+                    height: 22px;
+                    padding: 13px 16px 14px ;
+                    border: none;
+                    color: #4a4a4a;
+                    display: block;
+                    margin-bottom: 14px;
+                    background: #999;
+                }
+                .alert{
+                    font-size: 12px;
+                    display: none;
+                }
+                .alert-danger{
+                    color: red;
+                }
+                .alert-sucess{
+                    color: green;
+                }
+            }
+            button{
+                height: 50px;
+                width: 100%;
+                margin-top:10px;
+                margin-bottom: 14px;
+                background: #4a4a4a;
+                border: none;
+                line-height: 50px;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                cursor: pointer;
+            }
+            .button_msg{
+                a{
+                color: #4a4a4a;
+                font-size: 14px;
+                text-align: center;
+                display: block;
+                margin-bottom: 30px;
+                }
+            }
+            .banner_id{
+                display: block;
+                padding: 0 98px;
+                margin-bottom: 113px;
+                a{
+                    color: #999;
+                    font-size: 14px;
+                }
+                a:first-child{
+                    padding-right: 8px;
+                    border-right: 1px solid #999;
+                }
+                a:last-child{
+                    margin-left: 8px;
+                }
+            }
+            .banner_other{
+                a{
+                color: black;
+                font-size: 14px;
+                display: block;
+                width: 84px;
+                height: 19px;
+                margin: 0 auto;
+                }
+            }
+        }
+        // 注册框
+        .banner_register{
+            // display: none;
+            width: 348px;
+            height: 555px;
+            background-color: skyblue;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0 31px;
+            .banner_user_re{
+                font-size: 30px;
+                color: black;
+                margin-bottom: 20px;
+            }
+            .banner_msg{
+                margin-bottom: 50px;
+                input{ 
+                    width:316px;
+                    height: 22px;
+                    padding: 13px 16px 14px ;
+                    border: none;
+                    color: #4a4a4a;
+                    display: block;
+                    margin-bottom: 14px;
+                    margin-top: 10px;
+                    background: #999;
+                }
+                p{
+                    margin-bottom: 14px;
+                    display: none;
+                }
+                .warning{
+                    color: red;
+                    display: block;
+                }
+                .success{
+                    color: green;
+                    display: block;
+                }
+                label{
+                    text-align: left;
+                    color: #333;
+                    font-size: 14px;
+                }
+                
+            }
+            .re_btn{
+                button{
+                    height: 50px;
+                    width: 100%;
+                    margin-top:10px;
+                    margin-bottom: 14px;
+                    background: #4a4a4a;
+                    border: none;
+                    line-height: 50px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
+
+.footer{
+    margin-top: 100px;
+    .footer_link{
+        margin-bottom: 10px;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        .lang_select{
+            li{
+                float: left;
+                border-right: 1px solid black;
+                a{
+                    display: block;
+                    padding: 0 10px;
+                    color: #333;
+                    font-size: 14px;
+                }
+            }
+            li:last-child{
+                border: none;
+            }
+        }
+    }
+    .footer_text{
+        display: flex;
+        justify-content: center;
+        color: #333;
+        font-size: 14px;
+    }
+}
